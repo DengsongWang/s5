@@ -1,0 +1,24 @@
+{
+    "cakeBoardChoose": [
+      {
+        "type": "Circle",
+        "id": 1
+      },
+      {
+        "type": "Squsre",
+        "id": 2
+      },
+      {
+        "type": "Single layer",
+        "id": 3
+      },
+      {
+        "type": "Double layer",
+        "id": 4
+      },
+      {
+        "type": "Triple layer",
+        "id": 5
+      }
+    ]
+  }

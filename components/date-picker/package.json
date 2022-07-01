@@ -1,0 +1,46 @@
+{
+  "name": "@bit/nexxtway.react-rainbow.date-picker",
+  "version": "1.10.0",
+  "homepage": "https://bit.dev/nexxtway/react-rainbow/date-picker",
+  "main": "dist/components/DatePicker/index.js",
+  "componentId": {
+    "scope": "nexxtway.react-rainbow",
+    "name": "date-picker",
+    "version": "1.10.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "styled-components": "^4.3.2",
+    "@bit/nexxtway.react-rainbow.types": "1.10.0",
+    "@bit/nexxtway.react-rainbow.application": "1.10.0",
+    "@bit/nexxtway.react-rainbow.libs.constants": "1.10.0",
+    "@bit/nexxtway.react-rainbow.libs.with-redux-form": "1.10.0",
+    "@bit/nexxtway.react-rainbow.libs.get-locale": "1.10.0",
+    "@bit/nexxtway.react-rainbow.calendar": "1.10.0",
+    "@bit/nexxtway.react-rainbow.libs.colors": "1.10.0",
+    "@bit/nexxtway.react-rainbow.libs.font-sizes": "1.10.0",
+    "@bit/nexxtway.react-rainbow.input": "1.10.0",
+    "@bit/nexxtway.react-rainbow.modal": "1.10.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.5"
+    },
+    "overrides": {
+      "dependencies": {
+        "react": "-",
+        "react-dom": "-"
+      },
+      "peerDependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+      }
+    }
+  }
+}
