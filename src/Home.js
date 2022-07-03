@@ -14,6 +14,7 @@ import {Link} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col, Figure,Button, Image } from 'react-bootstrap';
+import Navbar from './Navbar';
 
 
 

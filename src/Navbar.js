@@ -1,6 +1,7 @@
 import {FaBeer} from 'react-icons/fa'
 import {Link} from 'react-router-dom';
 
+
 const Navbar = () => {
     return (
         <nav className="navbar">
@@ -9,8 +10,14 @@ const Navbar = () => {
                 <Link to="/">
                     <strong style={{color: '#BFA524',}}>GO BACK HOMEPAGE</strong>
                 </Link>
-                <a href="/">cart</a>
-                <a href="/">login or register</a>
+
+                <Link to="/">
+                    <strong style={{color: '#BFA524',}}>cart</strong>
+                </Link>
+                <Link to="/">
+                    <strong style={{color: '#BFA524',}}>login or register</strong>
+                </Link>
+                
             </div>
         </nav>  
     );

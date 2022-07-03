@@ -21,41 +21,55 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Navbar />
-      <div className="logoBar" > 
-        <img src={logo} alt="logo" width="300" height="120" />
-      </div>
-      <div className="content">
-        <Switch>
+        
+        <div className="content">
+          <Navbar></Navbar>
+          <div className="logoBar" > 
+            <img src={logo} alt="logo" width="300" height="120" />
+          </div>
+          <Switch>
+        
+          <Route exact path="/07013125" >
+            <RealNavbar></RealNavbar>
+            <Home></Home> 
+          </Route>
 
-          <Route exact path="/">
+          <Route exact path="/" >
             <RealNavbar></RealNavbar>
             <Home></Home> 
           </Route>
 
           <Route path="/BuyOnline">
+          
             <BuyOnline />
           </Route>
 
           <Route path="/Otherswork">
+          
             <Otherswork/>
           </Route>
 
           <Route path="/Appointment">
+          
             <Appointment/>
           </Route>
 
           <Route path="/Appointment2">
+          
             <Appointment2/>
           </Route>
 
           <Route path="/Recipes">
+          <Navbar />
+            
             <Recipes/>
           </Route>
         </Switch>
+        </div>
+        
                
       </div>
-    </div>
+    
     </Router>
     
   );
