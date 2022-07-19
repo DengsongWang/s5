@@ -35,12 +35,12 @@ const Home = () => {
             {/* enterances of making cake and online shopping */}
             <Container >
                 <Row>
-                    <Col style={{
+                    <Col sm style={{
                         backgroundColor: '#263c8b96',
-                        height: '400px',
+                        // height: '400px',
                         justifyContent:"center",
                         display:"flex",
-                        }}>
+                        }} >
                         <Figure style={{backgroundColor: 'rgba(0, 0, 0, 0)', paddingTop:'20px'}}>
                             <Figure.Image
                                 width={380}
@@ -71,9 +71,9 @@ const Home = () => {
                         </Figure>
                     </Col>
                     <Col xs={2}></Col>
-                    <Col style={{
+                    <Col sm style={{
                         backgroundColor: '#263c8b96',
-                        height: '400px',
+                        // height: '400px',
                         justifyContent:"center",
                         display:"flex"
                         }}>
@@ -112,12 +112,12 @@ const Home = () => {
             <Container style={{marginTop:'130px'}}>
                 <Row>
                     
-                    <Col style={{backgroundColor: '#263c8b96', height: '400px'}}>
+                    <Col style={{backgroundColor: '#263c8b96'}}>
                         
                         <Row style={{backgroundColor: 'rgba(0, 0, 0, 0)'}}>
 
                             {/* address text */}
-                            <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>
+                            <Col sm style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>
                                 
                                 <h1 style={{backgroundColor: 'rgba(0, 0, 0, 0)', color: '#BFA524', paddingTop:'20px'}}>
                                     <div className="address-text">
@@ -149,10 +149,11 @@ const Home = () => {
                             </Col>
 
                             {/* picture of map */}
-                            <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex",paddingTop:'20px',maxHeight:'400px',maxWidth:'400px'}}>
-                                <Image src={map} fluid={false} alt="map" width='100%' height='100%'>
+                            <Col sm style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex", marginBottom :'15px', marginTop :'15px'}}>
+                                {/* <Image src={map} fluid={false} alt="map" width='100%' height='100%' className="img-fluid">
 
-                                </Image>
+                                </Image> */}
+                                <img src={map} className='img-fluid' alt="map" width='70%'></img>
                             </Col>
                         </Row>
                     </Col>
@@ -160,16 +161,16 @@ const Home = () => {
             </Container>
             
             {/* About us */}
-            <Container style={{marginTop:'130px', backgroundColor: '#263c8b96', height: '300px'}}>
+            <Container style={{marginTop:'130px',backgroundColor: '#263c8b96'}}>
                 <div className="address-text" >
                         <p style={{fontSize:'40px', paddingTop:'15px'}}>
                         <a id="nav-to-aboutus" style={{backgroundColor: 'rgba(0, 0, 0, 0)'}}>About us</a>
                         </p>
                 </div>
                 <div className="address-text" >
-                        <p style={{fontSize:'25px', paddingTop:'10px', paddingLeft:'20px',paddingRight:'20px'}}>
+                        <p style={{fontSize:'25px', paddingTop:'10px', paddingLeft:'20px',paddingRight:'20px', textIndent: ' 2em'}}>
                             {/* placeholder */}
-                            <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span>
+                            {/* <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span> */}
                             Starry Night Bakery Studio is a cake-making experience located in Downtown Ottawa. 
                             As our valued customer, you can come into the store to experience the fun of making cakes, 
                             or purchase our wide variety of cakes in the store or online.
@@ -180,7 +181,7 @@ const Home = () => {
 
             {/* Services */}
             <a id="nav-to-service"></a>
-            <Container style={{marginTop:'130px', backgroundColor: '#263c8b96', height: '700px'}}>
+            <Container style={{marginTop:'130px',backgroundColor: '#263c8b96' }}>
                 <div className="address-text" >
                         <p style={{fontSize:'40px', paddingTop:'15px'}}>
                         <a id="nav-to-service" style={{backgroundColor: 'rgba(0, 0, 0, 0)'}}>Our services</a>
@@ -194,8 +195,8 @@ const Home = () => {
                 </div>
 
                 <div className="address-text" >
-                        <p style={{fontSize:'22px'}}>
-                        <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span>
+                        <p style={{fontSize:'22px', textIndent: ' 2em'}}>
+                        
                         Make your own style cake in our store with all the ingredients we provide! 
                         You can choose any cake board you want, whether it's round, 
                         square, single or multi-layered, we have it all. Even if you want a custom 
@@ -213,24 +214,24 @@ const Home = () => {
                 </div>
 
                 <div className="address-text" >
-                        <p style={{fontSize:'22px'}}>
-                        <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span>
+                        <p style={{fontSize:'22px', textIndent: ' 2em'}}>
+                        {/* <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span> */}
                         You can buy cakes and breads designed by us in our store,
                          or you can order online and we will provide home delivery service for payment.
                         </p>
                 </div>
 
                 <Row style={{backgroundColor: 'rgba(0, 0, 0, 0)'}}>
-                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>
+                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex", marginBottom :'15px'}}>
                         <Image src={cheese_cake} fluid={false} alt="map" width='180px' height='130px' float='right'></Image>
                     </Col>
-                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>                
+                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex", marginBottom :'15px'}}>                
                         <Image src={straw} fluid={false} alt="map" width='180px' height='130px' float='right'></Image>
                     </Col>
-                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>                
+                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex", marginBottom :'15px'}}>                
                         <Image src={cake1} fluid={false} alt="map" width='180px' height='130px' float='right'></Image>
                     </Col>
-                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex"}}>                
+                    <Col style={{backgroundColor: 'rgba(0, 0, 0, 0)', justifyContent:"center", display:"flex", marginBottom :'15px'}}>                
                         <Image src={cake2} fluid={false} alt="map" width='180px' height='130px' float='right'></Image>
                     </Col>
                 </Row>

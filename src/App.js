@@ -4,7 +4,7 @@ import RealNavbar from './RealNavbar';
 import logo from './img/logo.PNG'
 import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Route, Switch, Dropdown, Form} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Dropdown, Form, Link} from 'react-router-dom';
 import BuyOnline from './BuyOnline';
 import Otherswork from './Otherswork';
 import Appointment from './Appointment';
@@ -24,9 +24,12 @@ function App() {
         
         <div className="content">
           <Navbar></Navbar>
-          <div className="logoBar" > 
-            <img src={logo} alt="logo" width="300" height="120" />
-          </div>
+          <Link to='/'>
+            <div className="logoBar" > 
+              <img src={logo} alt="logo" width="300" height="120" />
+            </div>
+          </Link> 
+          
           <Switch>
         
           <Route exact path="/07013125" >

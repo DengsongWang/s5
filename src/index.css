@@ -34,6 +34,7 @@
   color: #e1ff00;
 }
 
+
 .realNavbar {
   padding: 15px;
   display: flex;
@@ -100,6 +101,11 @@ justify-content:center;
 display:flex;
 }
 
+.navbar .text {
+  justify-content: "center";
+  display: flex;
+}
+
 .home .address-text p{
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
@@ -140,4 +146,5 @@ display:flex;
 .Appointment h1{
   color: #BFA524;
 }
+
 
