@@ -11,22 +11,30 @@ import { BsJustifyRight } from 'react-icons/bs';
 
 
 const Recipes = () => {
-    return (  
-        <div className="Recipes">
-            <Container style={{marginTop:'30px', height: '700px'}}>
-                <img src={recipes} alt="" width="1000" height="500" />
-                <Link to="/Appointment">
-                            <p style={{ fontSize:'28px', color:'#BFA524', display:'flex', justifyContent:'flex-end'}}>
-                                Go back to appointment
-                            </p>
-                        </Link>
-
-
-                       
-                
-
-            </Container>
-        </div>
+    return (
+      <div className="Recipes">
+        <Container style={{ marginTop: "30px", height: "700px" }}>
+          <img src={recipes} alt="" width="1000" height="500" />
+          <Link
+            to="/"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0)",
+              color: "#BFA524",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "28px",
+                color: "#BFA524",
+                display: "flex",
+                justifyContent: "flex-end",
+              }}
+            >
+              Go back to homepage
+            </p>
+          </Link>
+        </Container>
+      </div>
     );
 }
  
