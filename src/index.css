@@ -55,39 +55,28 @@
 .realNavbar a:hover {
   color: #e1ff00;
 }
-.content {
-  
+
+.realNavbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #4E74A6;
+  justify-content: center;
+
 }
 
-/* blog previews / list */
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
-}
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0);
-}
-.blog-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
-}
-
-/* .home .logoBar h1 {
-  font-family: 'Allura';
-  font-size: 45px;
+.realNavbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
   color: #BFA524;
-  background-color: #4e74a600;
+  font-size: 30px;
 }
 
-.home .logoBar h5 {
-  font-family: 'Allura';
-  font-size: 20px;
-  color: #BFA524;
-
-  background-color: #4e74a600;
-} */
+.realNavbar a:hover {
+  color: #e1ff00;
+}
 
 .home p {
   color: #BFA524;
@@ -101,12 +90,29 @@ justify-content:center;
 display:flex;
 }
 
+.french p {
+  color: #BFA524;
+  font-size: 35px;
+
+}
+
+.french .address-text {
+  background-color: rgba(255, 255, 255, 0);
+  justify-content: center;
+  display: flex;
+}
+
 .navbar .text {
   justify-content: "center";
   display: flex;
 }
 
 .home .address-text p{
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+}
+
+.french .address-text p {
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
 }
@@ -146,6 +152,43 @@ display:flex;
 .Appointment h1{
   color: #BFA524;
   font-size: 30px;
+}
+
+.comment h1 {
+  color: #BFA524;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.comment {
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #BFA524;
+  
+}
+
+.comment .content p{
+  background-color: rgba(0, 0, 0, 0);
+  color: #BFA524;
+}
+
+.newComment .text{
+    justify-content: center;
+      display: flex;
+}
+
+.newComment .submit {
+  color:#000000;
+  background-color: #BFA524;
+  width:60px;
+  border-radius: 6px;
+  
+  
+  
+}
+.newComment {
+  
 }
 
 .links {
@@ -262,4 +305,8 @@ label {
   padding-left: 10px;
   font-size: 16px;
   padding-right: 10px;     
+}
+
+.french {
+  text-align: center;
 }

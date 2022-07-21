@@ -9,21 +9,39 @@ import cake4 from './img/cake4.jpg';
 import {FcLike, FcLikePlaceholder} from 'react-icons/fc';
 import {BiCommentDots} from 'react-icons/bi';
 import { useState } from 'react';
+import React, {Component} from 'react';
+import { propTypes } from 'prop-types';
 
-const Otherswork = () => {
 
-    const [name,setLike] = useState('sss');
-    const handleClick = () => {
-        setLike('fff');
-    }
 
-    
+
+
+export default class Otherswork extends Component {
+
+  // const [likes, setLikes] = useState(100);
+  // const [isClicked, setIsClicked] = useState(false);
+  // const handleClick = () => {
+  //   if (isClicked) {
+  //     setLikes(likes - 1);
+  //   } else {
+  //     setLikes(likes + 1);
+  //   }
+  //   setIsClicked(!isClicked);
+  // };
+
+  constructor() {
+    super();
+    this.state = {
+      isLiked: true,
+    };
+  }
+
+  render() {
 
     return (
       <div className="BuyOnline">
         <h1 style={{ textAlign: "center" }}>Other's work </h1>
-        <p>{name}</p>
-        <button onClick={handleClick}>click</button>
+
         <Container>
           <Row>
             <Col
@@ -46,19 +64,23 @@ const Otherswork = () => {
                     }}
                   >
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <FcLike
-                        size={30}
+                      <span
+                        onClick={this.handleLike.bind(this)}
                         style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-                      />
+                      >
+                        {this.state.isLiked ? "💓" : "🖤"}
+                      </span>
                     </Col>
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <BiCommentDots
-                        size={30}
-                        style={{
-                          backgroundColor: "rgba(0, 0, 0, 0)",
-                          fill: "white",
-                        }}
-                      />
+                      <Link to="/Comment">
+                        <BiCommentDots
+                          size={30}
+                          style={{
+                            backgroundColor: "rgba(0, 0, 0, 0)",
+                            fill: "white",
+                          }}
+                        />
+                      </Link>
                     </Col>
                   </Row>
                 </h3>
@@ -85,19 +107,23 @@ const Otherswork = () => {
                     }}
                   >
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <FcLike
-                        size={30}
+                      <span
+                        onClick={this.handleLike.bind(this)}
                         style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-                      />
+                      >
+                        {this.state.isLiked ? "💓" : "🖤"}
+                      </span>
                     </Col>
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <BiCommentDots
-                        size={30}
-                        style={{
-                          backgroundColor: "rgba(0, 0, 0, 0)",
-                          fill: "white",
-                        }}
-                      />
+                      <Link to="/Comment">
+                        <BiCommentDots
+                          size={30}
+                          style={{
+                            backgroundColor: "rgba(0, 0, 0, 0)",
+                            fill: "white",
+                          }}
+                        />
+                      </Link>
                     </Col>
                   </Row>
                 </h3>
@@ -124,19 +150,23 @@ const Otherswork = () => {
                     }}
                   >
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <FcLike
-                        size={30}
+                      <span
+                        onClick={this.handleLike.bind(this)}
                         style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-                      />
+                      >
+                        {this.state.isLiked ? "💓" : "🖤"}
+                      </span>
                     </Col>
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <BiCommentDots
-                        size={30}
-                        style={{
-                          backgroundColor: "rgba(0, 0, 0, 0)",
-                          fill: "white",
-                        }}
-                      />
+                      <Link to="/Comment">
+                        <BiCommentDots
+                          size={30}
+                          style={{
+                            backgroundColor: "rgba(0, 0, 0, 0)",
+                            fill: "white",
+                          }}
+                        />
+                      </Link>
                     </Col>
                   </Row>
                 </h3>
@@ -162,19 +192,23 @@ const Otherswork = () => {
                     }}
                   >
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <FcLikePlaceholder
-                        size={30}
+                      <span
+                        onClick={this.handleLike.bind(this)}
                         style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-                      />
+                      >
+                        {this.state.isLiked ? "💓" : "🖤"}
+                      </span>
                     </Col>
                     <Col xs={4} style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                      <BiCommentDots
-                        size={30}
-                        style={{
-                          backgroundColor: "rgba(0, 0, 0, 0)",
-                          fill: "white",
-                        }}
-                      />
+                      <Link to="/Comment">
+                        <BiCommentDots
+                          size={30}
+                          style={{
+                            backgroundColor: "rgba(0, 0, 0, 0)",
+                            fill: "white",
+                          }}
+                        />
+                      </Link>
                     </Col>
                   </Row>
                 </h3>
@@ -182,8 +216,27 @@ const Otherswork = () => {
             </Col>
           </Row>
         </Container>
+
+        
       </div>
     );
-}
+  }
+
+
+  handleLike() {
+    
+    this.setState(
+      (prevState) => {
+        console.log(prevState);
+        return {
+          isLiked: !prevState.isLiked,
+        }
+      },
+      () => {
+        console.log(this.state.isLiked); 
+    
+      })
+  }
  
-export default Otherswork;
+}
+// export default Otherswork;

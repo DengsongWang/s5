@@ -12,9 +12,10 @@ import Appointment2 from './Appointment2';
 import Recipes from './Recipes';
 import Basket from './Basket';
 import BuyOnlineData from './BuyOnlineData';
+import French from './French';
+import FrenchRealNavbar from './FrenchRealNavbar';
 import { useState } from "react";
-
-
+import Comment from "./Comment";
 
 
 
@@ -70,6 +71,11 @@ function App() {
               <Home></Home>
             </Route>
 
+            <Route exact path="/French">
+              <FrenchRealNavbar></FrenchRealNavbar>
+              <French></French>
+            </Route>
+
             <Route path="/BuyOnline">
               <div className="row">
                 <Container>
@@ -86,17 +92,15 @@ function App() {
                     </Col>
                   </Row>
                 </Container>
-                {/* <BuyOnline products={products} onAdd={onAdd}></BuyOnline>
-                <Basket
-                  cartItems={cartItems}
-                  onAdd={onAdd}
-                  onRemove={onRemove}
-                ></Basket> */}
               </div>
             </Route>
 
             <Route path="/Otherswork">
               <Otherswork />
+            </Route>
+
+            <Route path="/Comment">
+              <Comment />
             </Route>
 
             <Route path="/Appointment">

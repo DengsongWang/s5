@@ -15,17 +15,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col, Figure, Button, Image } from "react-bootstrap";
 import Navbar from "./Navbar";
 
-const Home = () => {
+const French = () => {
   // let name = 'mario';
 
   const [age, setAge] = useState(28);
 
   return (
-    <div className="home">
-      {/* enterances of making cake and online shopping */}
+    <div className="french">
       <div className="french">
         <Link
-          to="/French"
+          to="/"
           style={{
             backgroundColor: "rgba(0, 0, 0, 0)",
             borderColor: "#BFA524",
@@ -33,7 +32,7 @@ const Home = () => {
             fontSize: "25px",
           }}
         >
-          French
+          English
         </Link>
       </div>
 
@@ -73,7 +72,7 @@ const Home = () => {
                     fontSize: "25px",
                   }}
                 >
-                  Make cakes in our store
+                  Faire des gâteaux dans notre magasin
                 </p>
               </Figure.Caption>
               <Row style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
@@ -95,7 +94,7 @@ const Home = () => {
                           fontSize: "15px",
                         }}
                       >
-                        Appointment
+                        Rendez-vous
                       </p>
                     </Link>
                   </Button>
@@ -115,7 +114,7 @@ const Home = () => {
                           fontSize: "15px",
                         }}
                       >
-                        Other's work
+                        Le travail des autres
                       </p>
                     </Link>
                   </Button>
@@ -158,7 +157,7 @@ const Home = () => {
                     fontSize: "25px",
                   }}
                 >
-                  Bakery
+                  Pâtisserie
                 </p>
               </Figure.Caption>
               <Row style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
@@ -181,7 +180,7 @@ const Home = () => {
                           fontSize: "15px",
                         }}
                       >
-                        Buy online
+                        Acheter en ligne
                       </p>
                     </Link>
                   </Button>
@@ -219,7 +218,7 @@ const Home = () => {
                         id="nav-to-address"
                         style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
                       >
-                        Starry Night Bakery Studio
+                        Studio de boulangerie de nuit étoilée
                       </a>
                     </p>
                   </div>
@@ -227,7 +226,7 @@ const Home = () => {
                     <p>647 - 884 - 9622</p>
                   </div>
                   <div className="address-text" style={{ paddingTop: "20px" }}>
-                    <p>305 Rideau st</p>
+                    <p>305, rue Rideau</p>
                   </div>
                   <div className="address-text">
                     <p>Ottawa, ON</p>
@@ -237,16 +236,18 @@ const Home = () => {
                   </div>
 
                   <div className="address-text" style={{ paddingTop: "20px" }}>
-                    <p>~~Hours~~</p>
+                    <p>~~Heures~~</p>
                   </div>
                   <div className="address-text">
-                    <p>Tue - Sun: 9:00 ~ 21:00</p>
+                    <p>Mar - Dim: 9:00 ~ 21:00</p>
                   </div>
                   <div className="address-text">
                     <p>287680fw@gmail.com</p>
                   </div>
                   <div className="address-text">
-                    <p>(please contact this email if you have any question)</p>
+                    <p>
+                      (veuillez contacter cet e-mail si vous avez des questions)
+                    </p>
                   </div>
                 </h1>
               </Col>
@@ -285,7 +286,7 @@ const Home = () => {
               id="nav-to-aboutus"
               style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
             >
-              About us
+              À propos de nous
             </a>
           </p>
         </div>
@@ -299,12 +300,11 @@ const Home = () => {
               textIndent: " 2em",
             }}
           >
-            {/* placeholder */}
-            {/* <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span> */}
-            Starry Night Bakery Studio is a cake-making experience located in
-            Downtown Ottawa. As our valued customer, you can come into the store
-            to experience the fun of making cakes, or purchase our wide variety
-            of cakes in the store or online.
+            Studio de boulangerie de nuit étoilée est une expérience de
+            fabrication de gâteaux située dans Centre-ville d'Ottawa. En tant
+            que notre précieux client, vous pouvez entrer dans le magasin pour
+            découvrir le plaisir de faire des gâteaux, ou acheter notre grande
+            variété de gâteaux en magasin ou en ligne.
           </p>
         </div>
       </Container>
@@ -318,28 +318,29 @@ const Home = () => {
               id="nav-to-service"
               style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
             >
-              Our services
+              Nos services
             </a>
           </p>
         </div>
 
         <div style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
           <p style={{ backgroundColor: "rgba(0, 0, 0, 0)", fontSize: "32px" }}>
-            Cake-making experience:
+            Expérience en pâtisserie :
           </p>
         </div>
 
         <div className="address-text">
           <p style={{ fontSize: "22px", textIndent: " 2em" }}>
-            Make your own style cake in our store with all the ingredients we
-            provide! You can choose any cake board you want, whether it's round,
-            square, single or multi-layered, we have it all. Even if you want a
-            custom shaped cake board for your unique creation, we will make the
-            unique cake board for you with other shapes. In addition, you can
-            choose from our cream in up to dozens of colors, as well as a
-            variety of trinkets to make your cake look cooler. What's more, you
-            can take your work home and enjoy it, but don't forget to take a
-            picture!
+            Faites votre propre gâteau de style dans notre magasin avec tous les
+            ingrédients que nous apporter! Vous pouvez choisir n'importe quelle
+            planche à gâteau que vous voulez, qu'elle soit ronde, carré, simple
+            ou multicouche, nous avons tout. Même si vous voulez un planche à
+            gâteau de forme personnalisée pour votre création unique, nous
+            ferons le plateau à gâteau unique pour vous avec d'autres formes. De
+            plus, vous pouvez choisissez parmi notre crème jusqu'à des dizaines
+            de couleurs, ainsi qu'un variété de bibelots pour rendre votre
+            gâteau plus cool. De plus, vous pouvez emporter votre travail à la
+            maison et en profiter, mais n'oubliez pas de prendre un image!
           </p>
         </div>
 
@@ -358,22 +359,23 @@ const Home = () => {
                 color: "#BFA524",
               }}
             >
-              Get recipes!
+              Obtenez des recettes !
             </p>
           </Link>
         </div>
 
         <div style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}>
           <p style={{ backgroundColor: "rgba(0, 0, 0, 0)", fontSize: "32px" }}>
-            Bakery:
+            Pâtisserie:
           </p>
         </div>
 
         <div className="address-text">
           <p style={{ fontSize: "22px", textIndent: " 2em" }}>
             {/* <span style={{backgroundColor:'rgba(255, 255, 255, 0)', color:'rgba(255, 255, 255, 0)', fontSize:'25px'}}>aaaa</span> */}
-            You can buy cakes and breads designed by us in our store, or you can
-            order online and we will provide home delivery service for payment.
+            Vous pouvez acheter des gâteaux et des pains conçus par nous dans
+            notre magasin, ou vous pouvez commandez en ligne et nous fournirons
+            un service de livraison à domicile pour le paiement.
           </p>
         </div>
 
@@ -454,4 +456,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default French;
