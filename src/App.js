@@ -61,7 +61,7 @@ function App() {
           </div>
 
           <Switch>
-            <Route exact path="/07013125">
+            <Route exact path="/s5">
               <RealNavbar></RealNavbar>
               <Home></Home>
             </Route>
