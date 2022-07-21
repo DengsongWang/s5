@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/s5/static/css/main.073c9b0a.css",
-    "main.js": "/s5/static/js/main.648a6e9a.js",
-    "static/js/787.28cb0dcd.chunk.js": "/s5/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/s5/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/s5/static/css/main.895b649d.css",
+    "main.js": "/s5/static/js/main.96c6bfc5.js",
+    "static/media/cake2.jpg": "/s5/static/media/cake2.de6a464b33a93fd3f5ba.jpg",
+    "static/media/cheese-cake.jpg": "/s5/static/media/cheese-cake.90892c6fe88aa657dd4e.jpg",
+    "static/media/onlineshopping.jpg": "/s5/static/media/onlineshopping.acbbcf3351a934804b44.jpg",
+    "static/media/cake1.jpg": "/s5/static/media/cake1.2d0003e71c0b83bc00d8.jpg",
+    "static/media/map.PNG": "/s5/static/media/map.ca7e7e4a64913d824576.PNG",
+    "static/media/cake3.jpg": "/s5/static/media/cake3.25de34fd2510554479ac.jpg",
+    "static/media/strawberry-cake.jpg": "/s5/static/media/strawberry-cake.9af8382f3655a433b656.jpg",
+    "static/media/cake4.jpg": "/s5/static/media/cake4.6521547cf4e143262891.jpg",
+    "static/media/recipes.PNG": "/s5/static/media/recipes.accb1786e1dbec030a13.PNG",
+    "static/media/matcha-cake.jpg": "/s5/static/media/matcha-cake.9d464853035e5b1353c3.jpg",
+    "static/media/cakemake.jpg": "/s5/static/media/cakemake.a2bf76062aaf095745ad.jpg",
+    "static/media/logo.PNG": "/s5/static/media/logo.7e0cf6264b30574fd1db.PNG",
+    "static/media/2of2.PNG": "/s5/static/media/2of2.a56c071edeb62be567ab.PNG",
+    "static/media/1of2.PNG": "/s5/static/media/1of2.c7f2a7073c1a15a6523a.PNG",
     "index.html": "/s5/index.html",
-    "main.073c9b0a.css.map": "/s5/static/css/main.073c9b0a.css.map",
-    "main.648a6e9a.js.map": "/s5/static/js/main.648a6e9a.js.map",
-    "787.28cb0dcd.chunk.js.map": "/s5/static/js/787.28cb0dcd.chunk.js.map"
+    "main.895b649d.css.map": "/s5/static/css/main.895b649d.css.map",
+    "main.96c6bfc5.js.map": "/s5/static/js/main.96c6bfc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.648a6e9a.js"
+    "static/css/main.895b649d.css",
+    "static/js/main.96c6bfc5.js"
   ]
 }
