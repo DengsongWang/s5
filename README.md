@@ -1,3 +1,9 @@
+This is the code of my SEG3125 project 2: Dynamic version website
+Directly click this link to view the result website of this project: https://dengsongwang.github.io/s5/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
